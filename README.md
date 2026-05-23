@@ -59,6 +59,9 @@ sonic.ConfigStd
 > **Personal note:** I primarily use `sonic.ConfigDefault` in my projects. `ConfigFastest` is tempting
 > but I've run into edge cases with non-UTF-8 strings, so I'd recommend sticking with `ConfigDefault`
 > unless you've profiled and confirmed you need the extra speed.
+>
+> Another tip: if you're working with APIs that return inconsistent types (e.g., a field that's
+> sometimes a string and sometimes a number), pair sonic with `json.Number` to avoid silent data loss.
 
 ## Benchmarks
 
