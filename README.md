@@ -56,6 +56,10 @@ sonic.ConfigFastest
 sonic.ConfigStd
 ```
 
+> **Personal note:** I primarily use `sonic.ConfigDefault` in my projects. `ConfigFastest` is tempting
+> but I've run into edge cases with non-UTF-8 strings, so I'd recommend sticking with `ConfigDefault`
+> unless you've profiled and confirmed you need the extra speed.
+
 ## Benchmarks
 
 Benchmarks are run automatically via GitHub Actions. See [benchmark results](https://github.com/your-org/sonic/actions/workflows/benchmark.yml) for the latest performance data.
